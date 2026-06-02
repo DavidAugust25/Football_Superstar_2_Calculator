@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Declaring all colours and vars for later use */
+
+:root {
+    --tableFontSize: 16px;
+}
+
+/* General styling */
+
+html, body {
+  overflow: hidden; 
+  height: 100%;
+  display: block;
+}
+
+header, main, footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+header {
+    height: 5%;
+    background: green;  
+}
+
+main {
+    height: 90%;
+    background: blue;
+}
+
+footer {
+    height: 5%;
+    background: red;
+}
+
+/* Styling the default view */
+
+div.screenHalf {
+    display: flex;
+    width: 50%;
+    min-width: 200px;
+    height: 100%;
+    border: 1px solid white;
+}
+div#inputs {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div#playerStats {
+    width: 35%;
+    height: 100%;
+    display: block;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+div#playerStats table { 
+width: 100%;
+border-collapse: collapse; 
+margin-bottom: 15px; 
+font-size: var(--tableFontSize);
+}
+
+div#playerStats th, td { 
+text-align: center; 
+width: 30%;
+border: 1px solid gray;
+box-sizing: border-box;
+}
+
+div#playerStats th { 
+background-color: #f4f4f4; 
+}
+
+div#playerStats input[type=number] { 
+width: 100%; 
+box-sizing: border-box; 
+text-align: center; 
+font-size: var(--tableFontSize);
+}
+
+/* Responsivity */
+
+@media (max-width: 720px){
+    main {
+        flex-direction: column;
+    }
+    main div.screenHalf {
+        width: 100%;
+        height: 50%;
+    }
+
+    /* Mobile table */
+
+    div#playerStats {
+    width: 30%;
+    height: 100%;
+    display: block;
+    border: 1px solid white;
+    overflow: hidden;
+    }
+
+    div#playerStats table { 
+    width: 100%;
+    border-collapse: collapse; 
+    margin-bottom: 15px; 
+    font-size: 8px;
+    }
+
+    div#playerStats th, td { 
+    text-align: center; 
+    width: 120px;
+    }
+
+    div#playerStats th { 
+    background-color: #f4f4f4; 
+    }
+
+    div#playerStats input { 
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: center; 
+    font-size: 8px;
+    }
+
+
+}
