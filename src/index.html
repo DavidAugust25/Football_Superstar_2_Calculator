@@ -26,9 +26,9 @@
     <table>
       <thead>
         <tr>
-          <th>Abilities</th>
-          <th>Rating</th>
-          <th>T. Stars</th>
+          <th class="Abilities">Abilities</th>
+          <th id="1to99">Rating</th>
+          <th id="0to4">T. Stars</th>
         </tr>
       </thead>
       <tbody>
@@ -37,10 +37,10 @@
             <span>Acceleration</span>
           </td>
           <td>
-            <input type="number" value="50" name="Stat1" id="Stat1" class="statInput" min="1" max="99" oninput="if(this.value > 99) this.value = 99; if(this.value < 1) this.value = 1;">
+            <input type="number" value="50" id="Stat0" class="statInput" min="1" max="99">
           </td>
           <td>
-            <input type="number" value="0" name="Star1" id="Star1" class="statInput" min="0" max="4" oninput="if(this.value > 4) this.value = 4; if(this.value == 0) this.value = 0;">
+            <input type="number" value="0" id="Star0" class="statInput" min="1" max="99">
           </td>
         </tr>
         <tr>
@@ -48,7 +48,7 @@
             <span>Agility</span>
           </td>
           <td>
-            <input type="number" value="50" name="Stat1" id="Stat1" class="statInput" min="1" max="99" oninput="if(this.value > 99) this.value = 99; if(this.value < 1) this.value = 1;">
+            <input type="number" value="50" name="Stat1" id="1to99" class="statInput" min="1" max="99" oninput="if(this.value > 99) this.value = 99; if(this.value < 1) this.value = 1;">
           </td>
           <td>
             <input type="number" value="0" name="Star1" id="Star1" class="statInput" min="0" max="4" oninput="if(this.value > 4) this.value = 4; if(this.value == 0) this.value = 0;">
@@ -62,7 +62,7 @@
             <input type="number" value="50" name="Stat1" id="Stat1" class="statInput" min="1" max="99" oninput="if(this.value > 99) this.value = 99; if(this.value < 1) this.value = 1;">
           </td>
           <td>
-            <input type="number" value="0" name="Star1" id="Star1" class="statInput" min="0" max="4" oninput="if(this.value > 4) this.value = 4; if(this.value < 0) this.value = 0;">
+            <input type="number" value="0" name="Star1" id="Star1" class="statInput" min="0" max="4" oninput="if(this.value > 4) this.value = 4; if(this.value == 0) this.value = 0;">
           </td>
         </tr>
         <tr>
@@ -73,7 +73,7 @@
             <input type="number" value="50" name="Stat1" id="Stat1" class="statInput" min="1" max="99" oninput="if(this.value > 99) this.value = 99; if(this.value < 1) this.value = 1;">
           </td>
           <td>
-            <input type="number" value="0" name="Star1" id="Star1" class="statInput" min="0" max="4" oninput="if(this.value > 4) this.value = 4; if(this.value < 0) this.value = 0;">
+            <input type="number" value="0" name="Star1" id="Star1" class="statInput" min="0" max="4" oninput="if(this.value > 4) this.value = 4; if(this.value == 0) this.value = 0;">
           </td>
         </tr>
         <tr>
@@ -95,7 +95,7 @@
             <input type="number" value="50" name="Stat1" id="Stat1" class="statInput" min="1" max="99" oninput="if(this.value > 99) this.value = 99; if(this.value < 1) this.value = 1;">
           </td>
           <td>
-            <input type="number" value="0" name="Star1" id="Star1" class="statInput" min="0" max="4" oninput="if(this.value > 4) this.value = 4; if(this.value < 0) this.value = 0;">
+            <input type="number" value="0" name="Star1" id="Star1" class="statInput" min="0" max="4" oninput="if(this.value > 4) this.value = 4; if(this.value == 0) this.value = 0;">
           </td>
         </tr>
         <tr>
